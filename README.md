@@ -23,3 +23,7 @@ If the guess wasnt in the word then the number of lives reduced by 1 and feedbac
 Ask for input checked if the code was invalid or already guessed and provided feedback.
 If the code was valid then the check guess function would run and the guess is added to a list of already guessed letters.
 
+Finally a play game function was created which created an instance of the Hangman game and ran as long as the number of lives was not 0 and the number of letters to guess was greater than 0.
+If there were still lives and letters to guess the ask for input function would run.
+Game is won if the number of lives is greater than 0 and the number of letters to guess is 0.
+
