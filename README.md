@@ -13,3 +13,13 @@ The ask_for_input function is a while loop that checks if the entered input is v
 If the entered input is invalid, the code continues in the infinite while loop and never reaches the check_guess function.
 
 Finally the ask_for_input function is run to independently which is quicker than running the multiple lines of code previously.
+
+Using OOP i created the Hangman class containing certain attributes such as word, word guessed, number of letters and lives, list of guesses and the word list.
+2 functions were derived inside the hangman class and this were the check guess and ask for input functions. 
+
+Check guess checked if the guess is in the word and if it was then the underscore was replaced by the letter and the number of unique letters to guess reduced by one.
+If the guess wasnt in the word then the number of lives reduced by 1 and feedback was returned.
+
+Ask for input checked if the code was invalid or already guessed and provided feedback.
+If the code was valid then the check guess function would run and the guess is added to a list of already guessed letters.
+
