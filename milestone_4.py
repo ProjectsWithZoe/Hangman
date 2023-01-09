@@ -9,7 +9,7 @@ class Hangman:
         self.num_lives = num_lives
         self.list_of_guesses = []
         self.word_list = word_list
-        self.correct_guess = False
+        
 
     def check_guess(self,guess):
         guess.lower()
@@ -26,8 +26,8 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
-                if self.correct_guess:
-                    break
+                break
+                
                 
 
 hangman = Hangman(word_list)
