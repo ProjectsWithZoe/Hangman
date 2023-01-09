@@ -19,11 +19,12 @@ class Hangman:
             self.num_lives-=1
             print(f'Sorry, {guess} is not in the word.')
             print (f'You have {self.num_lives} lives left.')
-        self.list_of_guesses.append(guess)
+        
         for i in range(len(self.word)):
             if self.word[i] == guess:
                 self.word_guessed[i] = guess
         self.num_letters-=1
+        self.list_of_guesses.append(guess)
 
 
 
