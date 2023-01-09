@@ -7,5 +7,6 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.num_lives = num_lives
         self.list_of_guesses = []
+        self.word_list = word_list
         
 
